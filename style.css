@@ -1,0 +1,62 @@
+body{
+    background: linear-gradient(90deg, steelblue, lightblue);
+}
+
+.hamburger-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(45deg, lightblue, steelblue);
+    border: 1px solid rgb(47, 46, 99);
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hamburger{
+    position: absolute;
+    width: 70%;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.7s ease;
+}
+
+.hamburger-top{
+    margin-bottom: 20px;
+}
+
+.hamburger-bot{
+    margin-top: 20px;
+}
+
+.hamburger-hidden-one,
+.hamburger-hidden-two{
+    visibility: hidden;
+}
+
+.hamburger-container:hover .hamburger-hidden-one{
+    visibility: visible;
+    transform: rotate(-45deg);
+}
+
+.hamburger-container:hover .hamburger-hidden-two{
+    visibility: visible;
+    transform: rotate(45deg);
+}
+
+.hamburger-container:hover .hamburger-top,
+.hamburger-container:hover .hamburger-mid,
+.hamburger-container:hover .hamburger-bot{
+    visibility: hidden;
+}
+
+
+
